@@ -1,60 +1,79 @@
-# Laxmi Pharma — Design Suite
+# Laxmi Pharma 🌿💊
 
-Fetched from Stitch project **Laxmi Pharma** (`projects/1224735909581497217`).
+> **A full-featured digital pharmacy and clinical care platform built for neighbourhood apothecaries. Laxmi Pharma allows patients to browse genuine medicines, manage chronic refill schedules, consult certified pharmacists, upload prescriptions, and chat with an AI-powered health assistant.**
+
+[![Live Demo](https://img.shields.io/badge/Demo-Live_Website-005c55?style=for-the-badge&logo=firebase&logoColor=white)](https://laxmi-pharma.web.app)
+[![Firebase Hosting](https://img.shields.io/badge/Hosted_on-Firebase_Hosting-FFA611?style=for-the-badge&logo=firebase&logoColor=black)](https://laxmi-pharma.web.app)
+[![Supabase Auth](https://img.shields.io/badge/Auth-Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
 
 ---
 
-## 🚀 Features & Architecture
+## 🌐 Live Deployments
 
-- **Prescription Upload & OCR Scanner**: Drag-and-drop zone with simulated medicine recognition.
-- **Chronic Care Refill Stepper**: Interactive pill-tracker (Morning, Noon, Night) and 1-click renewal alerts.
-- **Medicine Store**: Real-time stock search and category filters with functional cart drawer.
-- **Laxmi AI Healthbot**: Clinical triage assistant checking drug interactions and dosage timings.
-- **Pharmacist Consult Desk**: Live queue estimation and instant callback booking.
+* **Primary Production URL:** **[https://laxmi-pharma.web.app](https://laxmi-pharma.web.app)**
+* **Alternative Domain:** **[https://laxmi-pharma.firebaseapp.com](https://laxmi-pharma.firebaseapp.com)**
+
+---
+
+## 🚀 Key Features
+
+* **🛒 Medicine Store & Cart:** Real-time stock search, category filters, and an interactive slide-out cart.
+* **🔁 Chronic Care Refill Stepper:** Patient adherence tracker for Morning, Noon, and Night schedules with renewal alerts.
+* **👨‍⚕️ Pharmacist Consult Desk:** Instant appointment booking and triage desk supervised by accredited pharmacists.
+* **📄 Prescription Upload & OCR Scanner:** Drag-and-drop prescription submission for rapid pharmacist verification.
+* **🤖 AI Health Assistant:** Clinical conversational assistant answering medication timings, drug interactions, and dietary guidance.
+* **🔐 Supabase Authentication:** Passwordless Email OTP authentication for customer accounts.
 
 ---
 
 ## 🎨 Design System: "Clinical Botanics"
 
-- **Primary Colors**: Deep Emerald Teal (`#005c55` / `#0f766e`)
-- **Secondary Colors**: Herbal Sage (`#006c49` / `#6cf8bb` / `#10b981`)
-- **Tertiary Colors**: Warm Amber (`#7d4200` / `#d97706` / `#ffdcc3`)
-- **Typography**: Plus Jakarta Sans (Regular, Semi-bold, Bold)
-- **Shape Language**: Soft capsule / pill buttons (`rounded-full`), gentle cards (`rounded-lg` / 16px)
-- **Full Spec**: See [`DESIGN.md`](DESIGN.md) or [`design_tokens.json`](design_tokens.json)
+* **Primary Palette:** Deep Emerald Teal (`#005c55` / `#0f766e`) & Sage Green (`#10b981`)
+* **Warm Accents:** Amber & Gold (`#d97706` / `#ffdcc3`)
+* **Typography:** [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) & Google Material Symbols
+* **Shape Language:** Smooth pill-shaped micro-interactions, clean glass cards, and responsive fluid layout.
 
 ---
 
-## 🖼️ Brand Assets
+## 🛠️ Tech Stack
 
-- **Brand Logo**: [`assets/laxmi_pharma_logo.png`](assets/laxmi_pharma_logo.png)
-- **Pharmacist Portrait**: [`assets/pharmacist_portrait.png`](assets/pharmacist_portrait.png)
-- **AI Infinity Vector**: [`assets/ai_infinity_loop.svg`](assets/ai_infinity_loop.svg)
+* **Frontend:** HTML5, Modern CSS3 (CSS Variables, Flexbox, Grid), Vanilla JavaScript (ES6+)
+* **Backend:** Node.js, Express.js
+* **Authentication & Database:** Supabase (Auth & Postgres)
+* **Email Service:** Resend SMTP / API
+* **Hosting:** Firebase Hosting
 
 ---
 
-## 🖥️ Backend Server (Express + MongoDB + Resend)
+## 💻 Local Setup & Development
 
-The project includes a Node.js Express backend with MongoDB persistence and Resend email notifications.
-
-### 1. Configure Environment
-Check or update `server/.env`:
-```env
-PORT=5000
-MONGODB_URI=mongodb://127.0.0.1:27017/laxmi_pharma
-RESEND_API_KEY=your_resend_api_key_here
-ADMIN_EMAIL=admin@mywebsite.com
-SENDER_EMAIL=onboarding@resend.dev
+### 1. Clone the repository:
+```bash
+git clone https://github.com/sandip07102004/laxmi-pharma.git
+cd laxmi-pharma
 ```
 
-### 2. Start the Server
+### 2. Environment Variables:
+Copy the example environment configuration:
+```bash
+cp .env.example .env
+```
+Fill in your own Supabase credentials and Resend API keys.
+
+### 3. Run the Backend Server:
 ```bash
 cd server
 npm install
 npm start
 ```
-The server will run on `http://localhost:5000` and automatically serve both the static store frontend and the API endpoints:
-- `POST /api/checkout` — Processes customer orders, saves to database, and triggers admin email notifications.
-- `GET /api/checkout/orders` — Lists all orders in the system.
-- `GET /health` — Service and database connection health check.
+The server will run on `http://localhost:5000`.
 
+### 4. Deploy to Firebase:
+```bash
+npx firebase-tools deploy --only hosting
+```
+
+---
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
