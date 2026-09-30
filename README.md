@@ -8,6 +8,37 @@
 
 ---
 
+## 📸 Platform Previews
+
+<div align="center">
+
+### 1. Flagship Apothecary & Clinical Homepage
+<img src="assets/screenshots/1_homepage.png" alt="1. Flagship Apothecary & Clinical Homepage" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" />
+
+<br/><br/>
+
+### 2. Genuine Medicine Store & Inventory
+<img src="assets/screenshots/2_store.png" alt="2. Genuine Medicine Store & Inventory" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" />
+
+<br/><br/>
+
+### 3. Pharmacist Consultation Desk
+<img src="assets/screenshots/3_consult.png" alt="3. Pharmacist Consultation Desk" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" />
+
+<br/><br/>
+
+### 4. Chronic Care Refill Management
+<img src="assets/screenshots/4_refills.png" alt="4. Chronic Care Refill Management" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" />
+
+<br/><br/>
+
+### 5. Prescription Upload & OCR Digitization
+<img src="assets/screenshots/5_upload_rx.png" alt="5. Prescription Upload & OCR Digitization" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" />
+
+</div>
+
+---
+
 ## 🚀 Key Features
 
 * **🛒 Medicine Store & Cart:** Real-time stock search, category filters, and an interactive slide-out cart.
