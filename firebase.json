@@ -9,6 +9,7 @@
       "**/.*",
       "**/node_modules/**",
       "server/**",
+      "assets/screenshots/**",
       "**/*.md",
       "design_tokens.json"
     ]
