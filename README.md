@@ -2,16 +2,9 @@
 
 > **A full-featured digital pharmacy and clinical care platform built for neighbourhood apothecaries. Laxmi Pharma allows patients to browse genuine medicines, manage chronic refill schedules, consult certified pharmacists, upload prescriptions, and chat with an AI-powered health assistant.**
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live_Website-005c55?style=for-the-badge&logo=firebase&logoColor=white)](https://laxmi-pharma.web.app)
-[![Firebase Hosting](https://img.shields.io/badge/Hosted_on-Firebase_Hosting-FFA611?style=for-the-badge&logo=firebase&logoColor=black)](https://laxmi-pharma.web.app)
-[![Supabase Auth](https://img.shields.io/badge/Auth-Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
-
----
-
-## 🌐 Live Deployments
-
-* **Primary Production URL:** **[https://laxmi-pharma.web.app](https://laxmi-pharma.web.app)**
-* **Alternative Domain:** **[https://laxmi-pharma.firebaseapp.com](https://laxmi-pharma.firebaseapp.com)**
+[![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Firebase](https://img.shields.io/badge/Platform-Firebase-FFA611?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
+[![Supabase](https://img.shields.io/badge/Auth%20%26%20DB-Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
 
 ---
 
