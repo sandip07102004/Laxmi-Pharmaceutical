@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dettolAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="#F0FDF4"/>
+  <!-- White Cap -->
+  <rect x="170" y="30" width="60" height="35" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <!-- Iconic Dettol Bottle -->
+  <path d="M180 65 L220 65 L245 105 L245 325 Q245 345 225 345 L175 345 Q155 345 155 325 L155 105 Z" fill="url(#dettolAmber)" stroke="#15803D" stroke-width="3"/>
+  <!-- Green Label -->
+  <rect x="162" y="140" width="76" height="160" rx="8" fill="#15803D"/>
+  <!-- White Sword / Cross -->
+  <path d="M190 170 L210 170 M200 160 L200 200" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <text x="200" y="225" font-family="'Arial Black', sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">Dettol</text>
+  <text x="200" y="245" font-family="Arial, sans-serif" font-weight="800" font-size="9" fill="#FEF08A" text-anchor="middle">ANTISEPTIC</text>
+  <text x="200" y="260" font-family="Arial, sans-serif" font-weight="700" font-size="8" fill="#FFFFFF" text-anchor="middle">DISINFECTANT</text>
+  <text x="200" y="285" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#FEF08A" text-anchor="middle">550ml Bottle</text>
+</svg>

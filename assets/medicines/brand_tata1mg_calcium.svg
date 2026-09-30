@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#F8FAFC"/>
+  <rect x="145" y="40" width="110" height="35" rx="6" fill="#0D9488"/>
+  <rect x="110" y="75" width="180" height="265" rx="16" fill="#FFFFFF" stroke="#0D9488" stroke-width="3"/>
+  <rect x="110" y="90" width="180" height="40" fill="#0D9488"/>
+  <text x="200" y="116" font-family="'Arial Black', sans-serif" font-weight="900" font-size="20" fill="#FFFFFF" text-anchor="middle">TATA 1mg</text>
+  <text x="200" y="165" font-family="'Arial Black', sans-serif" font-weight="900" font-size="22" fill="#0F172A" text-anchor="middle">CALCIUM</text>
+  <text x="200" y="190" font-family="Arial, sans-serif" font-weight="800" font-size="16" fill="#0D9488" text-anchor="middle">+ Vitamin D3</text>
+  <text x="200" y="210" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="#EA580C" text-anchor="middle">with Magnesium &amp; Zinc</text>
+  <circle cx="200" cy="255" r="28" fill="#F0FDFA" stroke="#0D9488" stroke-width="2"/>
+  <text x="200" y="260" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#0D9488" text-anchor="middle">BONE</text>
+  <text x="200" y="275" font-family="Arial, sans-serif" font-weight="700" font-size="10" fill="#64748B" text-anchor="middle">HEALTH</text>
+  <text x="200" y="320" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#334155" text-anchor="middle">60 Tablets Bottle</text>
+</svg>

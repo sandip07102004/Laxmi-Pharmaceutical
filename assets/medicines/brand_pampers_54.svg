@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pampersBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00A896"/>
+      <stop offset="100%" stop-color="#028090"/>
+    </linearGradient>
+    <linearGradient id="goldRibbon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F6BD60"/>
+      <stop offset="50%" stop-color="#FFE6A7"/>
+      <stop offset="100%" stop-color="#E5989B"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="#F4F9F9"/>
+  <!-- Bag Outline -->
+  <rect x="70" y="50" width="260" height="300" rx="24" fill="url(#pampersBg)" stroke="#00796B" stroke-width="4"/>
+  <!-- Handle top -->
+  <path d="M140 50 Q200 15 260 50" fill="none" stroke="#FFE6A7" stroke-width="8" stroke-linecap="round"/>
+  <!-- Ribbon Badge -->
+  <rect x="70" y="110" width="260" height="45" fill="url(#goldRibbon)"/>
+  <text x="200" y="138" font-family="Arial, sans-serif" font-weight="900" font-size="20" fill="#2E1C2B" text-anchor="middle">ALL ROUND PROTECTION</text>
+  <!-- Brand Name -->
+  <text x="200" y="200" font-family="'Trebuchet MS', Arial, sans-serif" font-weight="900" font-size="44" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">Pampers</text>
+  <text x="200" y="228" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="#FFF3B0" text-anchor="middle">BABY-DRY PANTS</text>
+  <!-- Size Badge -->
+  <circle cx="200" cy="275" r="32" fill="#FFFFFF" stroke="#F6BD60" stroke-width="4"/>
+  <text x="200" y="278" font-family="Arial, sans-serif" font-weight="900" font-size="26" fill="#028090" text-anchor="middle">M</text>
+  <text x="200" y="295" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#666" text-anchor="middle">54 PANTS</text>
+  <!-- Footer Feature -->
+  <rect x="90" y="320" width="220" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
+  <text x="200" y="335" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF" text-anchor="middle">12hr Leakage Lock · Ultra Soft</text>
+</svg>

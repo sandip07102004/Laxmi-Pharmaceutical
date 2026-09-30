@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="whisperBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="60%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#831843"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="#FDF2F8"/>
+  <rect x="75" y="60" width="250" height="280" rx="20" fill="url(#whisperBg)" stroke="#0D9488" stroke-width="3"/>
+  <ellipse cx="200" cy="120" rx="70" ry="25" fill="#BE185D"/>
+  <text x="200" y="128" font-family="'Trebuchet MS', Arial, sans-serif" font-style="italic" font-weight="900" font-size="32" fill="#FFFFFF" text-anchor="middle">whisper</text>
+  <text x="200" y="180" font-family="'Arial Black', sans-serif" font-weight="900" font-size="24" fill="#FFFFFF" text-anchor="middle">ULTRA CLEAN</text>
+  <rect x="110" y="205" width="180" height="36" rx="18" fill="#FDE047"/>
+  <text x="200" y="228" font-family="'Arial Black', sans-serif" font-weight="900" font-size="18" fill="#831843" text-anchor="middle">XL+ WINGS</text>
+  <text x="200" y="275" font-family="Arial, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF" text-anchor="middle">Lock 100% Odour</text>
+  <text x="200" y="310" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="#FDE047" text-anchor="middle">Pack of 30 Pads</text>
+</svg>

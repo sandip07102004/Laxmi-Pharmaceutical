@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#FFFBEB"/>
+  <rect x="135" y="45" width="130" height="30" rx="6" fill="#CA8A04"/>
+  <rect x="110" y="73" width="180" height="270" rx="16" fill="#FEF3C7" stroke="#CA8A04" stroke-width="3"/>
+  <rect x="120" y="105" width="160" height="190" rx="10" fill="#FFFFFF" stroke="#D97706" stroke-width="1.5"/>
+  <text x="200" y="140" font-family="'Georgia', serif" font-weight="900" font-size="20" fill="#B45309" text-anchor="middle">Baidyanath</text>
+  <text x="200" y="175" font-family="'Arial Black', sans-serif" font-weight="900" font-size="20" fill="#15803D" text-anchor="middle">TRIPHALA</text>
+  <text x="200" y="198" font-family="Arial, sans-serif" font-weight="900" font-size="16" fill="#B45309" text-anchor="middle">CHURNA</text>
+  <text x="200" y="230" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#4B5563" text-anchor="middle">Amla + Haritaki + Baheda</text>
+  <rect x="140" y="250" width="120" height="24" rx="12" fill="#15803D"/>
+  <text x="200" y="266" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF" text-anchor="middle">Digestive Detox</text>
+  <text x="200" y="325" font-family="Arial, sans-serif" font-weight="800" font-size="13" fill="#92400E" text-anchor="middle">240g Powder Jar</text>
+</svg>

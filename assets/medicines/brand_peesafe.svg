@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#FAF5FF"/>
+  <!-- Pump head -->
+  <rect x="180" y="30" width="40" height="25" rx="4" fill="#7E22CE"/>
+  <rect x="160" y="35" width="25" height="12" fill="#7E22CE"/>
+  <!-- Bottle -->
+  <rect x="120" y="55" width="160" height="290" rx="20" fill="#FFFFFF" stroke="#9333EA" stroke-width="3"/>
+  <circle cx="200" cy="115" r="28" fill="#F3E8FF"/>
+  <text x="200" y="122" font-family="'Arial Black', sans-serif" font-weight="900" font-size="13" fill="#7E22CE" text-anchor="middle">PEE</text>
+  <text x="200" y="136" font-family="'Arial Black', sans-serif" font-weight="900" font-size="13" fill="#C026D3" text-anchor="middle">SAFE</text>
+  <text x="200" y="180" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#1E293B" text-anchor="middle">NATURAL</text>
+  <text x="200" y="202" font-family="Arial, sans-serif" font-weight="800" font-size="15" fill="#7E22CE" text-anchor="middle">Intimate Wash</text>
+  <text x="200" y="235" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#9333EA" text-anchor="middle">With Tea Tree Essential Oil</text>
+  <rect x="140" y="260" width="120" height="24" rx="12" fill="#F3E8FF"/>
+  <text x="200" y="276" font-family="Arial, sans-serif" font-weight="800" font-size="11" fill="#7E22CE" text-anchor="middle">pH Balanced 3.5</text>
+  <text x="200" y="320" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#64748B" text-anchor="middle">105ml Pump Bottle</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#FDFBF7"/>
+  <!-- Comb Applicator Cap -->
+  <path d="M175 40 L225 40 L225 65 L175 65 Z" fill="#14532D"/>
+  <line x1="180" y1="20" x2="180" y2="40" stroke="#14532D" stroke-width="4" stroke-linecap="round"/>
+  <line x1="190" y1="18" x2="190" y2="40" stroke="#14532D" stroke-width="4" stroke-linecap="round"/>
+  <line x1="200" y1="15" x2="200" y2="40" stroke="#14532D" stroke-width="4" stroke-linecap="round"/>
+  <line x1="210" y1="18" x2="210" y2="40" stroke="#14532D" stroke-width="4" stroke-linecap="round"/>
+  <line x1="220" y1="20" x2="220" y2="40" stroke="#14532D" stroke-width="4" stroke-linecap="round"/>
+  <!-- Dark Green Bottle -->
+  <rect x="135" y="65" width="130" height="280" rx="16" fill="#14532D" stroke="#CA8A04" stroke-width="3"/>
+  <rect x="145" y="100" width="110" height="200" rx="8" fill="#15803D" stroke="#EAB308" stroke-width="1.5"/>
+  <text x="200" y="135" font-family="'Georgia', serif" font-weight="900" font-size="20" fill="#FEF08A" text-anchor="middle">indulekha</text>
+  <text x="200" y="160" font-family="'Arial Black', sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">BRINGHA OIL</text>
+  <text x="200" y="185" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#FEF08A" text-anchor="middle">Ayurvedic Medicine</text>
+  <text x="200" y="215" font-family="Arial, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" text-anchor="middle">Anti-Hairfall</text>
+  <circle cx="200" cy="250" r="20" fill="#CA8A04"/>
+  <text x="200" y="255" font-family="Arial, sans-serif" font-weight="900" font-size="10" fill="#14532D" text-anchor="middle">100%</text>
+  <text x="200" y="285" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#FEF08A" text-anchor="middle">100ml Selfie Comb</text>
+</svg>

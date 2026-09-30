@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lizolYellow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EAB308"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="#FEFCE8"/>
+  <!-- Red Cap -->
+  <rect x="170" y="30" width="60" height="30" rx="6" fill="#DC2626"/>
+  <!-- Fluted Bottle with Handle -->
+  <path d="M180 60 L220 60 L240 100 L250 330 Q250 350 230 350 L170 350 Q150 350 150 330 L160 100 Z" fill="url(#lizolYellow)" stroke="#CA8A04" stroke-width="3"/>
+  <rect x="160" y="130" width="80" height="150" rx="8" fill="#DC2626"/>
+  <text x="200" y="165" font-family="'Arial Black', sans-serif" font-weight="900" font-size="24" fill="#FFFFFF" text-anchor="middle">Lizol</text>
+  <text x="200" y="190" font-family="'Arial Black', sans-serif" font-weight="900" font-size="10" fill="#FEF08A" text-anchor="middle">DISINFECTANT</text>
+  <text x="200" y="205" font-family="Arial, sans-serif" font-weight="800" font-size="9" fill="#FFFFFF" text-anchor="middle">FLOOR CLEANER</text>
+  <circle cx="200" cy="235" r="18" fill="#FEF08A"/>
+  <text x="200" y="240" font-family="Arial, sans-serif" font-weight="900" font-size="10" fill="#DC2626" text-anchor="middle">99.9%</text>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-weight="800" font-size="11" fill="#FEF08A" text-anchor="middle">Citrus · 500ml</text>
+</svg>

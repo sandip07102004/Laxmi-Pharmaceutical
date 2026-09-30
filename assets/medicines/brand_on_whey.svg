@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="onTub" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#18181B"/>
+      <stop offset="50%" stop-color="#27272A"/>
+      <stop offset="100%" stop-color="#09090B"/>
+    </linearGradient>
+    <linearGradient id="goldBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EAB308"/>
+      <stop offset="50%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="#F4F4F5"/>
+  <!-- Black Lid -->
+  <rect x="130" y="45" width="140" height="35" rx="8" fill="#09090B" stroke="#3F3F46" stroke-width="2"/>
+  <!-- Giant Tub -->
+  <path d="M110 80 L290 80 L280 340 Q280 355 260 355 L140 355 Q120 355 120 340 Z" fill="url(#onTub)" stroke="#EAB308" stroke-width="3"/>
+  <!-- Red & Gold Banner -->
+  <rect x="115" y="115" width="170" height="50" fill="#DC2626"/>
+  <text x="200" y="152" font-family="'Arial Black', sans-serif" font-weight="900" font-size="34" fill="#FFFFFF" text-anchor="middle">ON</text>
+  <rect x="117" y="170" width="166" height="28" fill="url(#goldBand)"/>
+  <text x="200" y="190" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#000000" text-anchor="middle">GOLD STANDARD</text>
+  <text x="200" y="240" font-family="'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle">100% WHEY</text>
+  <text x="200" y="275" font-family="Arial, sans-serif" font-weight="800" font-size="14" fill="#EAB308" text-anchor="middle">24g PROTEIN · 5.5g BCAAs</text>
+  <text x="200" y="320" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="#A1A1AA" text-anchor="middle">Double Rich Chocolate · 1kg</text>
+</svg>

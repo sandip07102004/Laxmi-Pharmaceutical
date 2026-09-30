@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#FFF7ED"/>
+  <!-- Tube body -->
+  <path d="M130 50 L270 50 L250 280 L150 280 Z" fill="#16A34A" stroke="#15803D" stroke-width="3"/>
+  <rect x="160" y="280" width="80" height="45" rx="8" fill="#EA580C"/>
+  <line x1="130" y1="50" x2="270" y2="50" stroke="#CA8A04" stroke-width="6"/>
+  <text x="200" y="105" font-family="'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle">odomos</text>
+  <rect x="145" y="125" width="110" height="28" rx="14" fill="#EA580C"/>
+  <text x="200" y="144" font-family="Arial, sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">NON-STICKY</text>
+  <circle cx="200" cy="190" r="28" fill="#FFFFFF"/>
+  <text x="200" y="196" font-family="Arial, sans-serif" font-weight="900" font-size="13" fill="#15803D" text-anchor="middle">8 HOUR</text>
+  <text x="200" y="210" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#EA580C" text-anchor="middle">SHIELD</text>
+  <text x="200" y="250" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF" text-anchor="middle">With Vitamin E · 100g</text>
+</svg>

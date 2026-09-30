@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#FAFAF9"/>
+  <!-- Tube Body -->
+  <path d="M120 70 L280 70 L260 290 L140 290 Z" fill="#FFFFFF" stroke="#0284C7" stroke-width="3"/>
+  <rect x="150" y="290" width="100" height="45" rx="6" fill="#0284C7"/>
+  <!-- Top heat seal crimp -->
+  <line x1="120" y1="70" x2="280" y2="70" stroke="#CBD5E1" stroke-width="8"/>
+  <!-- Sebamed Logo -->
+  <text x="180" y="125" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#0F172A" text-anchor="middle">seba</text>
+  <text x="225" y="125" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#E11D48" text-anchor="middle">med</text>
+  <!-- pH 5.5 Circle -->
+  <circle cx="200" cy="165" r="22" fill="#0284C7"/>
+  <text x="200" y="172" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">pH 5.5</text>
+  <text x="200" y="215" font-family="Arial, sans-serif" font-weight="800" font-size="17" fill="#0F172A" text-anchor="middle">Baby Protective</text>
+  <text x="200" y="235" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="#E11D48" text-anchor="middle">Facial Cream</text>
+  <text x="200" y="260" font-family="Arial, sans-serif" font-weight="600" font-size="12" fill="#64748B" text-anchor="middle">Squalane &amp; Allantoin · 50ml</text>
+</svg>
