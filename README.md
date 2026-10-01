@@ -4,9 +4,7 @@
 
 [![Download Android APK](https://img.shields.io/badge/Download-Android%20APK-22c55e?style=for-the-badge&logo=android&logoColor=white)](https://github.com/sandip07102004/laxmi-pharma/raw/main/Laxmi-Pharma.apk)
 [![Mobile App](https://img.shields.io/badge/Platform-Android%20%7C%20Web-0F766E?style=for-the-badge)](https://github.com/sandip07102004/laxmi-pharma)
-[![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Firebase](https://img.shields.io/badge/Platform-Firebase-FFA611?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
-[![Supabase](https://img.shields.io/badge/Auth%20%26%20DB-Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
+
 
 ---
 
