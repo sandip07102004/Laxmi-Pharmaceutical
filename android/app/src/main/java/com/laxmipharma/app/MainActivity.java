@@ -1,8 +1,6 @@
 package com.laxmipharma.app;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -11,10 +9,6 @@ import android.view.WindowManager;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import androidx.activity.OnBackPressedCallback;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowCompat;
-import androidx.core.view.WindowInsetsCompat;
 import com.getcapacitor.BridgeActivity;
 
 public class MainActivity extends BridgeActivity {
@@ -26,8 +20,7 @@ public class MainActivity extends BridgeActivity {
         try {
             getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            getWindow().setStatusBarColor(Color.WHITE);
-            getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
+            getWindow().setStatusBarColor(android.graphics.Color.WHITE);
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 WindowInsetsController controller = getWindow().getInsetsController();
@@ -42,23 +35,6 @@ public class MainActivity extends BridgeActivity {
                 int flags = decorView.getSystemUiVisibility();
                 flags |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
                 decorView.setSystemUiVisibility(flags);
-            }
-        } catch (Exception ignored) {}
-
-        // Prevent status bar and display cutout overlap on Android 15+ (Edge-to-Edge) and earlier versions
-        try {
-            WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
-            View contentView = findViewById(android.R.id.content);
-            if (contentView != null) {
-                contentView.setBackgroundColor(Color.WHITE);
-                ViewCompat.setOnApplyWindowInsetsListener(contentView, (v, windowInsets) -> {
-                    Insets insets = windowInsets.getInsets(
-                        WindowInsetsCompat.Type.statusBars() | WindowInsetsCompat.Type.displayCutout()
-                    );
-                    v.setPadding(0, insets.top, 0, 0);
-                    return windowInsets;
-                });
-                ViewCompat.requestApplyInsets(contentView);
             }
         } catch (Exception ignored) {}
 

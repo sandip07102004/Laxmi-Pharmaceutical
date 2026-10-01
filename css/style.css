@@ -4621,42 +4621,7 @@ html.is-apk-native {
 html.is-apk-native body {
   background-color: #FFFFFF !important;
   overscroll-behavior-y: none;
-  padding-top: env(safe-area-inset-top, 0px) !important;
-}
-
-/* Hide website announcement bar ticker in native APK for a clean app bar */
-html.is-apk-native .announcement-bar {
-  display: none !important;
-}
-
-/* Ensure navbar sits flush with the top status bar */
-html.is-apk-native .navbar {
-  top: 0 !important;
-  background-color: #FFFFFF !important;
-  overflow: visible !important;
-}
-
-/* Fix profile popover clipping — escape navbar stacking context with fixed positioning */
-html.is-apk-native .profile-popover {
-  position: fixed !important;
-  top: 62px !important;
-  right: 12px !important;
-  left: auto !important;
-  width: min(290px, calc(100vw - 24px)) !important;
-  max-height: calc(100vh - 80px) !important;
-  overflow-y: auto !important;
-  z-index: 9999 !important;
-  transform-origin: top right !important;
-}
-
-/* Semi-transparent backdrop overlay behind popover in APK */
-html.is-apk-native .profile-popover.open::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.18);
-  z-index: -1;
-  pointer-events: none;
+  padding-top: 0 !important;
 }
 
 /* Silky smooth GPU-accelerated entrance animation on launch */
@@ -4676,4 +4641,3 @@ html.is-apk-native .hero-section {
     transform: translate3d(0, 0, 0);
   }
 }
-
