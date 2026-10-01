@@ -1022,9 +1022,56 @@
           popover.setAttribute('aria-hidden', 'false');
           if (container) container.classList.add('open');
           btn.setAttribute('aria-expanded', 'true');
+
+          // Ensure profile popover is perfectly constrained within the viewport with safe margins
+          adjustPopoverPosition(popover);
         }
       });
     });
+
+    // Dynamically constrain popover within viewport margins to prevent right or left cut-offs
+    function adjustPopoverPosition(popover) {
+      if (!popover) return;
+      popover.style.right = '';
+      popover.style.left = '';
+
+      const rect = popover.getBoundingClientRect();
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      const safeMargin = 12;
+
+      if (rect.right > viewportWidth - safeMargin) {
+        const excess = rect.right - (viewportWidth - safeMargin);
+        const computedRight = parseFloat(window.getComputedStyle(popover).right) || 0;
+        popover.style.right = `${computedRight + excess}px`;
+      }
+
+      const updatedRect = popover.getBoundingClientRect();
+      if (updatedRect.left < safeMargin) {
+        popover.style.left = `${safeMargin}px`;
+        popover.style.right = 'auto';
+      }
+    }
+
+    // Auto-close profile popover whenever the user scrolls or drags the screen
+    const handleScrollClose = () => {
+      let anyOpen = false;
+      popovers.forEach(p => {
+        if (p.classList.contains('open')) {
+          p.classList.remove('open');
+          p.setAttribute('aria-hidden', 'true');
+          p.style.right = '';
+          p.style.left = '';
+          anyOpen = true;
+        }
+      });
+      if (anyOpen) {
+        containers.forEach(c => c.classList.remove('open'));
+        document.querySelectorAll('.nav-user-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      }
+    };
+
+    window.addEventListener('scroll', handleScrollClose, { passive: true });
+    window.addEventListener('touchmove', handleScrollClose, { passive: true });
 
     // Close when clicking outside of nav-user-container
     document.addEventListener('click', (e) => {
@@ -1032,6 +1079,8 @@
         popovers.forEach(p => {
           p.classList.remove('open');
           p.setAttribute('aria-hidden', 'true');
+          p.style.right = '';
+          p.style.left = '';
         });
         containers.forEach(c => c.classList.remove('open'));
         document.querySelectorAll('.nav-user-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
