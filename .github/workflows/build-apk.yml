@@ -54,24 +54,45 @@ jobs:
           name: Laxmi-Pharma-APK
           path: Laxmi-Pharma.apk
 
+      - name: Clean up Old Releases & Tags
+        run: |
+          # Fetch and delete any old releases other than v1.0.1 to maintain a single release
+          RELEASES=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/releases" | jq -r '.[] | select(.tag_name != "v1.0.1") | .id // empty')
+          for id in $RELEASES; do
+            if [ -n "$id" ] && [ "$id" != "null" ]; then
+              echo "Deleting old release ID $id..."
+              curl -s -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/releases/$id"
+            fi
+          done
+          # Remove legacy v1.0.0 tag if lingering
+          curl -s -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/git/refs/tags/v1.0.0" 2>/dev/null || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish / Update GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.0
-          name: "Laxmi Pharma v1.0.0 (Android APK)"
+          tag_name: v1.0.1
+          name: "Laxmi Pharma v1.0.1"
           body: |
-            ### 🌿 Laxmi Pharma v1.0.0 — Official Android Application Release
+            🚀 Laxmi Pharma is now available on Android!
 
-            #### 📱 Native Android Experience:
-            - **Official Laxmi Pharma Brand Icon:** Custom adaptive launcher icon with safe-zone inset framing.
-            - **Silky Smooth Launch Animations:** Pure white launch splash screen with centered logo, 300ms fade-out transition, and 60fps GPU-accelerated page entry.
-            - **Seamless Navigation:** Integrated white status bar with crisp dark icons and intelligent hardware Back button gesture handling.
-            - **Complete Apothecary & Care Suite:** Full access to medicine catalog, chronic refills tracker, pharmacist consultation desk, prescription OCR uploader, and AI clinical assistant.
+            Download the official standalone APK to order genuine medicines, manage chronic care refills, consult certified pharmacists, upload prescriptions, and chat with the AI health assistant on the go.
 
-            #### 📦 Installation:
-            Download and install **`Laxmi-Pharma.apk`** below on any Android phone (Android 7.0+).
+            ✨ Features:
+            • Smooth 60fps GPU-accelerated performance & fluid page transitions
+            • Native white status bar with safe-zone insets & edge-to-edge display
+            • Profile popover fixed positioning with zero cut-off clipping
+            • Custom branded adaptive launcher icon & clean splash screen
+            • Android hardware Back button navigation & gesture support
+            • Complete pharmacy suite: Store, Refills, Consult, Rx Upload & AI Assistant
           files: Laxmi-Pharma.apk
           draft: false
           prerelease: false
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
