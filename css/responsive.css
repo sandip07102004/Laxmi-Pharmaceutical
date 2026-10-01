@@ -450,8 +450,9 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 8px !important;
+    gap: 10px !important;
     margin: 14px auto 8px !important;
+    padding: 0 4px !important;
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
@@ -461,6 +462,8 @@
   .popover-auth-btn {
     display: inline-flex !important;
     flex: 1 1 0 !important;
+    width: 50% !important;
+    max-width: 118px !important;
     min-width: 0 !important;
     align-items: center !important;
     justify-content: center !important;
@@ -473,6 +476,7 @@
     gap: 5px !important;
     white-space: nowrap !important;
     box-sizing: border-box !important;
+    margin: 0 !important;
   }
 
   .btn.popover-auth-btn span,
@@ -488,6 +492,22 @@
     font-size: 16px !important;
     line-height: 1 !important;
     flex-shrink: 0 !important;
+  }
+
+  .popover-signin-btn {
+    background-color: var(--color-primary, #005c55) !important;
+    border: 1.5px solid var(--color-primary, #005c55) !important;
+    color: #ffffff !important;
+  }
+
+  .popover-signup-btn {
+    border: 1.5px solid var(--color-primary, #005c55) !important;
+    color: var(--color-primary, #005c55) !important;
+    background-color: transparent !important;
+  }
+
+  .popover-signup-btn:hover {
+    background-color: rgba(0, 92, 85, 0.08) !important;
   }
 
   .cart-trigger {
