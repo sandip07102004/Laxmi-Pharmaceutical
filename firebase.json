@@ -11,7 +11,19 @@
       "server/**",
       "assets/screenshots/**",
       "**/*.md",
-      "design_tokens.json"
+      "design_tokens.json",
+      "android/**",
+      "www/**",
+      "**/*.apk",
+      "Laxmi-Pharma.apk",
+      "**/*.exe",
+      "**/*.bat",
+      "**/*.cmd",
+      "**/*.sh",
+      "sync-web.js",
+      "setup-android.js",
+      "capacitor.config.json",
+      "package*.json"
     ]
   }
 }
