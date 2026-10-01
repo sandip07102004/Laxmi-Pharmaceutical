@@ -1,0 +1,25 @@
+{
+  "name": "laxmi-pharma",
+  "version": "1.0.0",
+  "description": "Laxmi Pharma - Clinical Care & Pharmacy App",
+  "main": "index.html",
+  "scripts": {
+    "cap:prepare": "node sync-web.js",
+    "cap:sync": "node sync-web.js && cap sync",
+    "cap:open:android": "cap open android"
+  },
+  "keywords": [
+    "pharmacy",
+    "healthcare",
+    "capacitor",
+    "android"
+  ],
+  "author": "Laxmi Pharma",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  }
+}

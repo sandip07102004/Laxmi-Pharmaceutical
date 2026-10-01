@@ -32,3 +32,14 @@ Thumbs.db
 firebase-debug.log*
 firestore-debug.log*
 ui-debug.log*
+
+# Android & Capacitor
+www/
+android/local.properties
+android/.gradle/
+android/app/build/
+android/build/
+.gradle/
+*.apk
+!Laxmi-Pharma.apk
+setup-android.js
