@@ -1031,13 +1031,18 @@
 
     // Ensure an explicit close button is present in every profile popover (for web & mobile)
     popovers.forEach(popover => {
-      if (!popover.querySelector('.popover-close-btn')) {
-        const closeBtn = document.createElement('button');
+      let closeBtn = popover.querySelector('.popover-close-btn');
+      if (!closeBtn) {
+        closeBtn = document.createElement('button');
         closeBtn.type = 'button';
         closeBtn.className = 'popover-close-btn';
         closeBtn.setAttribute('aria-label', 'Close Profile');
-        closeBtn.setAttribute('title', 'Close');
-        closeBtn.innerHTML = '<span class="material-symbols-outlined" style="font-size: 18px;">close</span>';
+        closeBtn.setAttribute('title', 'Close Profile');
+        closeBtn.innerHTML = '<span class="material-symbols-outlined">close</span>';
+        popover.insertBefore(closeBtn, popover.firstChild);
+      }
+      if (!closeBtn.dataset.hasCloseListener) {
+        closeBtn.dataset.hasCloseListener = 'true';
         closeBtn.addEventListener('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
@@ -1048,7 +1053,6 @@
           containers.forEach(c => c.classList.remove('open'));
           document.querySelectorAll('.nav-user-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
         });
-        popover.appendChild(closeBtn);
       }
     });
 

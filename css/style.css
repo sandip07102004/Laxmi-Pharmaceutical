@@ -441,23 +441,34 @@ a {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   background: rgba(0, 0, 0, 0.05);
   color: var(--color-on-surface-variant, #64748b);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   cursor: pointer;
-  z-index: 10;
-  transition: background-color var(--transition-fast), color var(--transition-fast);
+  z-index: 25;
+  touch-action: manipulation;
+  transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 }
 
 .popover-close-btn:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.12);
   color: var(--color-on-surface, #0f172a);
+  transform: scale(1.06);
+}
+
+.popover-close-btn:active {
+  transform: scale(0.94);
+}
+
+.popover-close-btn .material-symbols-outlined {
+  font-size: 18px !important;
+  line-height: 1 !important;
 }
 
 .popover-auth-row {

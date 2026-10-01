@@ -446,6 +446,17 @@
     transform-origin: top right;
   }
 
+  .popover-close-btn {
+    top: 10px !important;
+    right: 10px !important;
+    width: 32px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 30 !important;
+  }
+
   .popover-auth-row {
     display: flex !important;
     align-items: center !important;
