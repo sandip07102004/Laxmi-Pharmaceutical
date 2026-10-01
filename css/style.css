@@ -4621,7 +4621,18 @@ html.is-apk-native {
 html.is-apk-native body {
   background-color: #FFFFFF !important;
   overscroll-behavior-y: none;
-  padding-top: 0 !important;
+  padding-top: env(safe-area-inset-top, 0px) !important;
+}
+
+/* Hide website announcement bar ticker in native APK for a clean app bar */
+html.is-apk-native .announcement-bar {
+  display: none !important;
+}
+
+/* Ensure navbar sits flush with the top status bar */
+html.is-apk-native .navbar {
+  top: 0 !important;
+  background-color: #FFFFFF !important;
 }
 
 /* Silky smooth GPU-accelerated entrance animation on launch */
@@ -4641,3 +4652,4 @@ html.is-apk-native .hero-section {
     transform: translate3d(0, 0, 0);
   }
 }
+
