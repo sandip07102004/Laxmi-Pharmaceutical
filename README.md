@@ -10,17 +10,6 @@
 
 ---
 
-## 📱 Mobile Application (Android)
-
-Laxmi Pharma is packaged as a high-performance native Android application using **Capacitor**:
-
-* **🚀 Latest GitHub Release:** [**Download from Releases (v1.0.0)**](https://github.com/sandip07102004/laxmi-pharma/releases/latest)
-* **📥 Direct APK Download:** [**Download Laxmi-Pharma.apk (Raw)**](https://github.com/sandip07102004/laxmi-pharma/raw/main/Laxmi-Pharma.apk)
-* **💊 Comprehensive Care on Mobile:** Access the complete medicine store, chronic refill schedule, pharmacist tele-consultation desk, and clinical AI assistant directly on your mobile device.
-* **⚡ Native Mobile Experience:** Custom Laxmi Pharma splash launch screen, clean white status bar with crisp dark system icons, and intelligent hardware Back button gesture navigation.
-
----
-
 ## 📸 Platform Previews
 
 <div align="center">
@@ -49,6 +38,17 @@ Laxmi Pharma is packaged as a high-performance native Android application using 
 <img src="assets/screenshots/5_upload_rx.png" alt="5. Prescription Upload & OCR Digitization" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" />
 
 </div>
+
+---
+
+## 📱 Mobile Application (Android)
+
+Laxmi Pharma is packaged as a high-performance native Android application using **Capacitor**:
+
+* **🚀 Latest GitHub Release:** [**Download from Releases (v1.0.0)**](https://github.com/sandip07102004/laxmi-pharma/releases/latest)
+* **📥 Direct APK Download:** [**Download Laxmi-Pharma.apk (Raw)**](https://github.com/sandip07102004/laxmi-pharma/raw/main/Laxmi-Pharma.apk)
+* **💊 Comprehensive Care on Mobile:** Access the complete medicine store, chronic refill schedule, pharmacist tele-consultation desk, and clinical AI assistant directly on your mobile device.
+* **⚡ Native Mobile Experience:** Custom Laxmi Pharma splash launch screen, clean white status bar with crisp dark system icons, and intelligent hardware Back button gesture navigation.
 
 ---
 
