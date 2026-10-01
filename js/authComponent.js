@@ -1029,6 +1029,29 @@
       });
     });
 
+    // Ensure an explicit close button is present in every profile popover (for web & mobile)
+    popovers.forEach(popover => {
+      if (!popover.querySelector('.popover-close-btn')) {
+        const closeBtn = document.createElement('button');
+        closeBtn.type = 'button';
+        closeBtn.className = 'popover-close-btn';
+        closeBtn.setAttribute('aria-label', 'Close Profile');
+        closeBtn.setAttribute('title', 'Close');
+        closeBtn.innerHTML = '<span class="material-symbols-outlined" style="font-size: 18px;">close</span>';
+        closeBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          popover.classList.remove('open');
+          popover.setAttribute('aria-hidden', 'true');
+          popover.style.right = '';
+          popover.style.left = '';
+          containers.forEach(c => c.classList.remove('open'));
+          document.querySelectorAll('.nav-user-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        });
+        popover.appendChild(closeBtn);
+      }
+    });
+
     // Dynamically constrain popover within viewport margins to prevent right or left cut-offs
     function adjustPopoverPosition(popover) {
       if (!popover) return;
@@ -1037,7 +1060,7 @@
 
       const rect = popover.getBoundingClientRect();
       const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-      const safeMargin = 12;
+      const safeMargin = 14;
 
       if (rect.right > viewportWidth - safeMargin) {
         const excess = rect.right - (viewportWidth - safeMargin);
@@ -1052,7 +1075,7 @@
       }
     }
 
-    // Auto-close profile popover whenever the user scrolls or drags the screen
+    // Auto-close profile popover whenever the user scrolls or drags the screen on Web & Mobile
     const handleScrollClose = () => {
       let anyOpen = false;
       popovers.forEach(p => {
@@ -1070,12 +1093,14 @@
       }
     };
 
-    window.addEventListener('scroll', handleScrollClose, { passive: true });
+    window.addEventListener('scroll', handleScrollClose, { capture: true, passive: true });
+    document.addEventListener('scroll', handleScrollClose, { capture: true, passive: true });
+    window.addEventListener('wheel', handleScrollClose, { passive: true });
     window.addEventListener('touchmove', handleScrollClose, { passive: true });
 
     // Close when clicking outside of nav-user-container
     document.addEventListener('click', (e) => {
-      if (!e.target.closest('.nav-user-container')) {
+      if (!e.target.closest('.nav-user-container') && !e.target.closest('.popover-close-btn')) {
         popovers.forEach(p => {
           p.classList.remove('open');
           p.setAttribute('aria-hidden', 'true');
@@ -1090,6 +1115,16 @@
     // Close on Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
+        popovers.forEach(p => {
+          if (p.classList.contains('open')) {
+            p.classList.remove('open');
+            p.setAttribute('aria-hidden', 'true');
+            p.style.right = '';
+            p.style.left = '';
+          }
+        });
+        containers.forEach(c => c.classList.remove('open'));
+        document.querySelectorAll('.nav-user-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
         const deleteBackdrop = document.getElementById('deleteAccountConfirmBackdrop');
         if (deleteBackdrop && deleteBackdrop.classList.contains('open')) {
           closeDeleteAccountConfirmModal();
