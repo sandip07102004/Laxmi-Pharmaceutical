@@ -436,14 +436,14 @@
   }
 
   .profile-popover {
-    position: fixed !important;
-    top: calc(var(--nav-height, 64px) + 8px) !important;
-    right: 14px !important;
+    position: absolute !important;
+    top: calc(100% + 4px) !important;
+    right: 0 !important;
     left: auto !important;
     width: min(280px, calc(100vw - 28px)) !important;
     max-width: calc(100vw - 28px) !important;
     box-sizing: border-box !important;
-    transform-origin: top right;
+    transform-origin: top right !important;
   }
 
   .popover-close-btn {

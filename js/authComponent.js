@@ -1059,8 +1059,8 @@
     // Dynamically constrain popover within viewport margins to prevent right or left cut-offs
     function adjustPopoverPosition(popover) {
       if (!popover) return;
-      popover.style.right = '';
-      popover.style.left = '';
+      popover.style.removeProperty('right');
+      popover.style.removeProperty('left');
 
       const rect = popover.getBoundingClientRect();
       const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -1069,13 +1069,13 @@
       if (rect.right > viewportWidth - safeMargin) {
         const excess = rect.right - (viewportWidth - safeMargin);
         const computedRight = parseFloat(window.getComputedStyle(popover).right) || 0;
-        popover.style.right = `${computedRight + excess}px`;
+        popover.style.setProperty('right', `${computedRight + excess}px`, 'important');
       }
 
       const updatedRect = popover.getBoundingClientRect();
       if (updatedRect.left < safeMargin) {
-        popover.style.left = `${safeMargin}px`;
-        popover.style.right = 'auto';
+        popover.style.setProperty('left', `${safeMargin}px`, 'important');
+        popover.style.setProperty('right', 'auto', 'important');
       }
     }
 
