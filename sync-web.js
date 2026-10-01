@@ -33,6 +33,11 @@ for (const file of htmlFiles) {
     content = content.replace('<html lang="en">', '<html lang="en" class="is-apk-native">')
                      .replace('<html>', '<html class="is-apk-native">');
   }
+  // Inject viewport-fit=cover for safe-area insets
+  if (!content.includes('viewport-fit=cover')) {
+    content = content.replace('content="width=device-width, initial-scale=1.0, maximum-scale=5.0"',
+                              'content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover"');
+  }
   fs.writeFileSync(path.join(wwwDir, file), content, 'utf8');
   console.log(`Copied ${file} -> www/${file} (with is-apk-native)`);
 }
