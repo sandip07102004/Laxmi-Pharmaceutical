@@ -4633,6 +4633,30 @@ html.is-apk-native .announcement-bar {
 html.is-apk-native .navbar {
   top: 0 !important;
   background-color: #FFFFFF !important;
+  overflow: visible !important;
+}
+
+/* Fix profile popover clipping — escape navbar stacking context with fixed positioning */
+html.is-apk-native .profile-popover {
+  position: fixed !important;
+  top: 62px !important;
+  right: 12px !important;
+  left: auto !important;
+  width: min(290px, calc(100vw - 24px)) !important;
+  max-height: calc(100vh - 80px) !important;
+  overflow-y: auto !important;
+  z-index: 9999 !important;
+  transform-origin: top right !important;
+}
+
+/* Semi-transparent backdrop overlay behind popover in APK */
+html.is-apk-native .profile-popover.open::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Silky smooth GPU-accelerated entrance animation on launch */
