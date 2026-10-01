@@ -2,7 +2,7 @@
 
 > **A full-featured digital pharmacy and clinical care platform built for neighbourhood apothecaries. Laxmi Pharma allows patients to browse genuine medicines, manage chronic refill schedules, consult certified pharmacists, upload prescriptions, and chat with an AI-powered health assistant.**
 
-[![Download Android APK](https://img.shields.io/badge/Download-Android%20APK-22c55e?style=for-the-badge&logo=android&logoColor=white)](https://github.com/sandip07102004/laxmi-pharma/raw/main/Laxmi-Pharma.apk)
+[![Download Android APK](https://img.shields.io/badge/Download-Android%20APK-22c55e?style=for-the-badge&logo=android&logoColor=white)](https://github.com/sandip07102004/laxmi-pharma/releases/latest)
 [![Mobile App](https://img.shields.io/badge/Platform-Android%20%7C%20Web-0F766E?style=for-the-badge)](https://github.com/sandip07102004/laxmi-pharma)
 [![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Firebase](https://img.shields.io/badge/Platform-Firebase-FFA611?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
@@ -14,7 +14,8 @@
 
 Laxmi Pharma is packaged as a high-performance native Android application using **Capacitor**:
 
-* **📥 Direct APK Download:** [**Download Laxmi-Pharma.apk (Latest v1.0)**](https://github.com/sandip07102004/laxmi-pharma/raw/main/Laxmi-Pharma.apk)
+* **🚀 Latest GitHub Release:** [**Download from Releases (v1.0.0)**](https://github.com/sandip07102004/laxmi-pharma/releases/latest)
+* **📥 Direct APK Download:** [**Download Laxmi-Pharma.apk (Raw)**](https://github.com/sandip07102004/laxmi-pharma/raw/main/Laxmi-Pharma.apk)
 * **💊 Comprehensive Care on Mobile:** Access the complete medicine store, chronic refill schedule, pharmacist tele-consultation desk, and clinical AI assistant directly on your mobile device.
 * **⚡ Native Mobile Experience:** Custom Laxmi Pharma splash launch screen, clean white status bar with crisp dark system icons, and intelligent hardware Back button gesture navigation.
 
