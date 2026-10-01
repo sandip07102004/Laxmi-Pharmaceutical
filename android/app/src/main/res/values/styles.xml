@@ -22,8 +22,8 @@
         <item name="android:background">@drawable/splash</item>
         <item name="android:windowSplashScreenBackground">#FFFFFF</item>
         <item name="windowSplashScreenBackground">#FFFFFF</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
         <item name="android:statusBarColor">#FFFFFF</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="postSplashScreenTheme">@style/AppTheme.NoActionBar</item>

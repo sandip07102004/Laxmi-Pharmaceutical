@@ -4607,3 +4607,37 @@ body.page-ai-assistant .floating-chat-widget {
 
 
 
+
+
+/* ======================================================================
+   APK-NATIVE ONLY OVERRIDES: Smooth Launch & 60fps Micro-Animations
+   ====================================================================== */
+html.is-apk-native {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+html.is-apk-native body {
+  background-color: #FFFFFF !important;
+  overscroll-behavior-y: none;
+  padding-top: 0 !important;
+}
+
+/* Silky smooth GPU-accelerated entrance animation on launch */
+html.is-apk-native .navbar,
+html.is-apk-native main,
+html.is-apk-native .hero-section {
+  animation: apkContentFadeIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes apkContentFadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
