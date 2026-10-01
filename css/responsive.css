@@ -461,11 +461,11 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 10px !important;
+    gap: 12px !important;
     margin: 14px auto 8px !important;
-    padding: 0 4px !important;
+    padding: 0 !important;
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 240px !important;
     box-sizing: border-box !important;
   }
 
@@ -474,7 +474,7 @@
     display: inline-flex !important;
     flex: 1 1 0 !important;
     width: 50% !important;
-    max-width: 118px !important;
+    max-width: 114px !important;
     min-width: 0 !important;
     align-items: center !important;
     justify-content: center !important;
@@ -509,12 +509,14 @@
     background-color: var(--color-primary, #005c55) !important;
     border: 1.5px solid var(--color-primary, #005c55) !important;
     color: #ffffff !important;
+    margin: 0 !important;
   }
 
   .popover-signup-btn {
     border: 1.5px solid var(--color-primary, #005c55) !important;
     color: var(--color-primary, #005c55) !important;
     background-color: transparent !important;
+    margin: 0 !important;
   }
 
   .popover-signup-btn:hover {
