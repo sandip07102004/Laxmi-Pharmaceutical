@@ -461,34 +461,47 @@ a {
 }
 
 .popover-auth-row {
-  display: flex;
-  gap: 8px;
-  margin: 12px 0 8px;
-  width: 100%;
-  box-sizing: border-box;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  margin: 14px auto 8px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 
+.btn.popover-auth-btn,
 .popover-auth-btn {
-  flex: 1 1 0;
-  min-width: 0;
-  justify-content: center;
-  font-size: 0.82rem;
-  padding: 8px 6px;
-  min-height: 38px;
-  border-radius: var(--radius-full);
-  gap: 4px;
-  white-space: nowrap;
-  box-sizing: border-box;
+  display: inline-flex !important;
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  font-size: 0.82rem !important;
+  padding: 8px 6px !important;
+  min-height: 38px !important;
+  height: 38px !important;
+  border-radius: var(--radius-full) !important;
+  gap: 5px !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
 }
 
+.btn.popover-auth-btn span,
 .popover-auth-btn span {
-  display: inline-block;
-  white-space: nowrap;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
 }
 
+.btn.popover-auth-btn .material-symbols-outlined,
 .popover-auth-btn .material-symbols-outlined {
   font-size: 16px !important;
-  flex-shrink: 0;
+  line-height: 1 !important;
+  flex-shrink: 0 !important;
 }
 
 .popover-signup-btn {

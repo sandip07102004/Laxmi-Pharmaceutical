@@ -446,6 +446,50 @@
     transform-origin: top right;
   }
 
+  .popover-auth-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin: 14px auto 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .btn.popover-auth-btn,
+  .popover-auth-btn {
+    display: inline-flex !important;
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 0.82rem !important;
+    padding: 8px 6px !important;
+    min-height: 38px !important;
+    height: 38px !important;
+    border-radius: var(--radius-full) !important;
+    gap: 5px !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+  }
+
+  .btn.popover-auth-btn span,
+  .popover-auth-btn span {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+  }
+
+  .btn.popover-auth-btn .material-symbols-outlined,
+  .popover-auth-btn .material-symbols-outlined {
+    font-size: 16px !important;
+    line-height: 1 !important;
+    flex-shrink: 0 !important;
+  }
+
   .cart-trigger {
     width: auto !important;
     height: auto !important;
